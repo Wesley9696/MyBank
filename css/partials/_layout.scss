@@ -1,0 +1,50 @@
+// layout do projeto
+
+//Container devices (variaveis)
+
+$container-xl: 1440px;
+$container-l: 1140px;
+$container-m: 960px;
+$container-s: 540px;
+
+
+// Mixins "funções" > responsividades
+
+@mixin responsive($device){
+     @if $device == xl{
+        //está informando que quando for a cima de 1440px ele executara a resolução piso>$container-xl
+        @media screen and (min-width: $container-xl){
+            @content;
+        }
+     }
+
+     @else if $device == l{
+        //está função executa e responsividade de piso:1140px e teto:1440px 
+        @media screen and (max-width: $container-xl) and (min-width: $container-l){
+            @content;
+        }
+     }
+
+     @else if $device == m{
+        //está função executa e responsividade de piso:960px e teto:1140px 
+        @media screen and (max-width: $container-l) and (min-width: $container-m){
+            @content;
+        }
+     }
+
+     
+     @else if $device == s{
+        //está função executa e responsividade de teto:960px
+        @media screen and (max-width: $container-m){
+            @content;
+        }
+     }
+
+     @else if $device == xs{
+        //está função executa e responsividade de teto:540px 
+        @media screen and (max-width: $container-s){
+            @content;
+        }
+     }
+}
+
