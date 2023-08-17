@@ -1,0 +1,21 @@
+a {
+    @include typeface-2(p2, desktop);
+    text-decoration: none;
+    color: $black-normal;
+    transition: .5s ease;
+
+    &:hover {
+        opacity: .9;
+    }
+}
+
+.btn {
+    border-radius: 16px;
+    background: var(--gradiente-green-my-bank, linear-gradient(221deg, $primary-normal 0%, $primary-dark 70.00%));
+    padding: 12px 32px;
+
+
+    box-shadow:var(--gradiente-green-my-bank, linear-gradient(221deg, #00FD83 0%, #00BF63 70.00%));
+    /* box shadow */
+    
+}
