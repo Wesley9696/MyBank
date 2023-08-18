@@ -136,6 +136,43 @@ header {
   box-shadow: 0px 2.3096878529px 3.6230399609px 0px rgba(19, 233, 105, 0.03), 0px 6.3859915733px 10.017241478px 0px rgba(19, 233, 105, 0.04), 0px 15.3750076294px 24.1176586151px 0px rgba(19, 233, 105, 0.05), 0px 51px 80px 0px rgba(0, 54, 22, 0.08);
 }
 
+.navbar-desktop {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 10px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 960px) {
+  .navbar-desktop {
+    display: none;
+  }
+}
+
+.logo {
+  width: 48px;
+  height: 48px;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-desktop-item-1 {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.navbar-desktop-item-2 {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
 .menu-desktop {
   list-style: none;
   display: flex;
@@ -149,14 +186,14 @@ header {
 
 .nav-link-desktop {
   display: inline-block;
-  padding: 12px 16px;
+  padding: 12px 18px;
   position: relative;
 }
 .nav-link-desktop::after {
   content: "";
   position: absolute;
   top: 42%;
-  right: -3px;
+  right: 1px;
   width: 7px;
   height: 7px;
   transform: rotate(45deg);
@@ -188,7 +225,6 @@ header {
 }
 .dropdown-menu .dropdown-item {
   width: 100%;
-  border: 1px solid red;
 }
 
 .active-dropdown-menu {
@@ -225,13 +261,37 @@ header {
 @media screen and (max-width: 960px) {
   .navbar-mobile {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
 .bx {
-  width: 48px;
-  height: 48px;
-  background-color: green;
+  width: 36px;
+  height: 36px;
+  position: relative;
+  cursor: pointer;
+  z-index: 800;
+  transition: 0.7s ease;
+  background-color: rgb(255, 255, 255);
+}
+.bx::after {
+  content: "";
+  position: absolute;
+  top: 40%;
+  left: 17%;
+  width: 70%;
+  height: 2px;
+  background-color: #00FD83;
+}
+.bx::before {
+  content: "";
+  position: absolute;
+  top: 64%;
+  left: 17%;
+  width: 70%;
+  height: 2px;
+  background-color: #00FD83;
 }
 
 .menu-mobile {
