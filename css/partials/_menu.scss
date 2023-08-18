@@ -80,6 +80,22 @@ header {
     justify-content: flex-start;
     flex-direction: column;
     align-items: center;
+
+    opacity: 0;
+    pointer-events: none;
+
+    transition: .7s ease;
+
+    .dropdown-item{
+        width: 100%;
+        border: 1px solid red;
+    }
+}
+
+
+.active-dropdown-menu{
+    pointer-events: all;
+    opacity: 1;
 }
 
 .nav-link-dropdown {

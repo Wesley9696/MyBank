@@ -5,11 +5,6 @@
 }
 
 /*cores auxiliares*/
-.mia {
-  width: 20%;
-  height: 50%;
-}
-
 h1 {
   color: #161617;
   font-family: "Sora", sans-serif;
@@ -187,6 +182,18 @@ header {
   justify-content: flex-start;
   flex-direction: column;
   align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.7s ease;
+}
+.dropdown-menu .dropdown-item {
+  width: 100%;
+  border: 1px solid red;
+}
+
+.active-dropdown-menu {
+  pointer-events: all;
+  opacity: 1;
 }
 
 .nav-link-dropdown {
