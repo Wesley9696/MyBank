@@ -154,6 +154,7 @@ header {
   width: 48px;
   height: 48px;
   background-color: red;
+  z-index: 800;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -273,13 +274,13 @@ header {
   cursor: pointer;
   z-index: 800;
   transition: 0.7s ease;
-  background-color: rgb(255, 255, 255);
 }
 .bx::after {
   content: "";
   position: absolute;
   top: 40%;
   left: 17%;
+  transition: 0.7s ease;
   width: 70%;
   height: 2px;
   background-color: #00FD83;
@@ -289,18 +290,89 @@ header {
   position: absolute;
   top: 64%;
   left: 17%;
+  transition: 0.7s ease;
+  width: 70%;
+  height: 2px;
+  background-color: #00FD83;
+}
+
+.active-bx {
+  width: 36px;
+  height: 36px;
+  position: relative;
+  cursor: pointer;
+  z-index: 800;
+}
+.active-bx::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 17%;
+  transform: rotate(-135deg);
+  width: 70%;
+  height: 2px;
+  background-color: #00FD83;
+}
+.active-bx::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 17%;
+  transform: rotate(315deg);
   width: 70%;
   height: 2px;
   background-color: #00FD83;
 }
 
 .menu-mobile {
-  display: none;
+  width: 100vw;
+  height: 100vh;
+  background-color: #F2FAF5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: 1s ease;
+  transform: translate3d(0, -100px, 0);
 }
-@media screen and (max-width: 960px) {
-  .menu-mobile {
-    display: block;
-  }
+
+.active-menu-mobile {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.nav-list-mobile {
+  max-width: 1440px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-link-mobile {
+  display: inline-block;
+  font-family: "Sora", sans-serif;
+  font-size: 36px;
+  line-height: 120%;
+  color: #555456;
+  padding: 16px 24px;
+  position: relative;
+}
+.nav-link-mobile::after {
+  content: "";
+  position: absolute;
+  top: 90%;
+  left: 16px;
+  width: 0%;
+  height: 2px;
+  transition: 1s ease;
+  background-color: #13E969;
+}
+.nav-link-mobile:hover {
+  color: #00FD83;
+}
+.nav-link-mobile:hover::after {
+  width: 100%;
 }
 
 .border {
