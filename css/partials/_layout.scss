@@ -10,48 +10,53 @@ $container-s: 540px;
 
 // Mixins "funções" > responsividades
 
-@mixin responsive($device){
-     @if $device == xl{
+@mixin responsive($device) {
+    @if $device ==xl {
+
         //está informando que quando for a cima de 1440px ele executara a resolução piso>$container-xl
-        @media screen and (min-width: $container-xl){
+        @media screen and (min-width: $container-xl) {
             @content;
         }
-     }
+    }
 
-     @else if $device == l{
+    @else if $device ==l {
+
         //está função executa e responsividade de piso:1140px e teto:1440px 
-        @media screen and (max-width: $container-xl) and (min-width: $container-l){
+        @media screen and (max-width: $container-xl) and (min-width: $container-l) {
             @content;
         }
-     }
+    }
 
-     @else if $device == m{
+    @else if $device ==m {
+
         //está função executa e responsividade de piso:960px e teto:1140px 
-        @media screen and (max-width: $container-l) and (min-width: $container-m){
+        @media screen and (max-width: $container-l) and (min-width: $container-m) {
             @content;
         }
-     }
+    }
 
-     
-     @else if $device == s{
+
+    @else if $device ==s {
+
         //está função executa e responsividade de teto:960px
-        @media screen and (max-width: $container-m){
+        @media screen and (max-width: $container-m) {
             @content;
         }
-     }
+    }
 
-     @else if $device == xs{
+    @else if $device ==xs {
+
         //está função executa e responsividade de teto:540px 
-        @media screen and (max-width: $container-s){
+        @media screen and (max-width: $container-s) {
             @content;
         }
-     }
+    }
 }
 
 
-.container{
+.container {
     max-width: $container-xl;
-    margin: 0 auto;  //0 em cima e embaixo e automatico na direita e esquerda
+    margin: 0 auto; //0 em cima e embaixo e automatico na direita e esquerda
 
     padding: 96px 24px;
 
@@ -61,82 +66,93 @@ $container-s: 540px;
     flex-direction: row; //faz com que ao ficar responsivo/menor os elementos não fiquem em linha mas sim em coluna
 
 
-    @include responsive(s){
+    @include responsive(s) {
         flex-direction: column;
 
         padding: 32px 18px;
     }
 }
 
-.flex-start{
+.flex-start {
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 
 
-.flex-center{
+.flex-center {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.flex-column{
+.flex-column {
     flex-direction: column;
 }
 
-.relative{
+.relative {
     position: relative;
 }
 
-.flex-wrap{
+.flex-wrap {
     flex-wrap: wrap;
 }
 
-.flex-item-1{
+.flex-item-1 {
     flex: 1 1 360px;
 }
 
-.flex-item-2{
+.flex-item-2 {
     flex: 2 1 360px;
 }
 
-.flex-item-3{
+.flex-item-3 {
     flex: 3 1 360px;
 }
 
-.flex-item-4{
+.flex-item-4 {
     flex: 4 1 360px;
 }
 
-.flex-item-5{
+.flex-item-5 {
     flex: 5 1 360px;
 }
 
-.flex-item-auto{
+.flex-item-auto {
     flex: 2 1 auto;
 }
 
-.w-auto{
+.w-auto {
     width: auto;
 }
 
-.w-100{
+.w-100 {
     width: 100%;
 }
 
-.w-75{
+.w-75 {
     width: 75%;
 }
 
-.w-50{
+.w-50 {
     width: 50%;
 }
 
-.w-25{
+.w-25 {
     width: 25%;
 }
 
-.hidden{
+.hidden {
     overflow: hidden;
+}
+
+
+
+
+.hero {
+    height: 90vh;
+
+    @include responsive(s){
+        height: auto;
+    }
 }

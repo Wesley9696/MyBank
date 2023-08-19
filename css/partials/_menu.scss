@@ -182,7 +182,7 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-      
+
     }
 }
 
@@ -270,7 +270,8 @@ header {
 }
 
 
-.menu-mobile {  // faz o menu hamburguer mobile ocupar 100% da tela
+.menu-mobile {
+    // faz o menu hamburguer mobile ocupar 100% da tela
     width: 100vw;
     height: 100vh;
 
@@ -283,25 +284,44 @@ header {
     pointer-events: none; //faz com que o elemento desapareça totalmente
     transition: 1s ease;
 
-    transform: translate3d(0,-100px,0);
+    transform: translate3d(0, -100px, 0);
 
 }
 
-.active-menu-mobile{
+.active-menu-mobile {
     opacity: 1;
     pointer-events: all;
 }
 
-.nav-list-mobile{
+.nav-list-mobile {
     max-width: $container-xl;
     list-style: none;
 
-    display: flex;  //deixa um do lado do outro
+    display: flex; //deixa um do lado do outro
     flex-direction: column; //deixa como coluna
+
+
+    svg {
+        width: 38px;
+        height: 38px;
+        cursor: pointer;
+
+
+        path {
+            stroke: $gray-7;
+            transition: .5s ease;
+        }
+
+        &:hover {
+            path {
+                stroke: $primary-normal;
+            }
+        }
+    }
 }
 
-.nav-link-mobile{
-    display: inline-block; 
+.nav-link-mobile {
+    display: inline-block;
     @include typeface-1(h3, desktop);
     color: $gray-2;
 
@@ -309,7 +329,7 @@ header {
 
     position: relative;
 
-    &::after{
+    &::after {
         content: '';
         position: absolute;
         top: 90%;
@@ -322,11 +342,11 @@ header {
         background-color: $secondary-normal;
     }
 
-    &:hover{
+    &:hover {
         color: $primary-normal;
 
-        &::after{
-            width:100%;
+        &::after {
+            width: 100%;
         }
     }
 }
