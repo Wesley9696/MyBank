@@ -12,6 +12,7 @@
         href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600&family=Source+Sans+3:wght@300;400;600&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/svg-inject.min.js"></script>
 </head>
 
 <body>
@@ -22,17 +23,27 @@
         <!--====================Navbar-Mobile====================-->
         <nav class="navbar-mobile">
             <div class="bx" id="bx"></div>
-            <div class="logo"></div>
+            <div class="logo">
+                <a href="">
+                    <img src="svg/Union.svg" alt="" onload="SVGInject(this)">
+                </a>
+            </div>
             <a href="">Login</a>
         </nav>
 
 
         <nav class="navbar-desktop">
             <div class="navbar-desktop-item-1">
-                <div class="logo"></div>
+                <div class="logo">
+                    <div class="logo">
+                        <a href="">
+                            <img src="svg/Union.svg" alt="" onload="SVGInject(this)">
+                        </a>
+                    </div>
+                </div>
                 <ul class="menu-desktop">
                     <li class="menu-item" id="menu-item-1">
-                        <a href="" class="nav-link-desktop">MyBank</a>
+                        <a href="" class="nav-link-desktop">Mybank</a>
                         <ul class="dropdown-menu" id="dropdown-item-1">
                             <li class="dropdown-item"><a href="" class="nav-link-dropdown">O My</a></li>
                             <li class="dropdown-item"><a href="" class="nav-link-dropdown">Carreiras</a></li>
@@ -59,7 +70,7 @@
             </div>
 
             <div class="navbar-desktop-item-2">
-                <a href="" class="btn">Quero ser MyBank</a>
+                <a href="" class="btn mr-2">Quero ser Mybank</a>
                 <a href="">Login</a>
             </div>
         </nav>
@@ -69,17 +80,44 @@
 
         <nav class="menu-mobile" id="menu-mobile">
             <ul class="nav-list-mobile">
-                <li><a href="" class="nav-link-mobile">MyBank</a></li>
+                <li><a href="" class="nav-link-mobile">Mybank</a></li>
                 <li><a href="" class="nav-link-mobile">Conta Digital</a></li>
                 <li><a href="" class="nav-link-mobile">Pra você</a></li>
                 <li><a href="" class="nav-link-mobile">Quero ser MyBank</a></li>
                 <li><a href="" class="nav-link-mobile">Redes sociais</a></li>
 
+
+                <li class="mt-3 flex-center">
+                    <a href=""><img src="svg/icon-facebook.svg" class="mx-1" alt="" onload="SVGInject(this)"></a>
+                    <a href=""><img src="svg/icon-instagram.svg" class="mx-1" alt="" onload="SVGInject(this)"></a>
+                    <a href=""><img src="svg/icon-twitter.svg" class="mx-1" alt="" onload="SVGInject(this)"></a>
+                    <a href=""><img src="svg/icon-youtube.svg" class="mx-1" alt="" onload="SVGInject(this)"></a>
+                </li>
             </ul>
         </nav>
 
 
     </header>
+
+    <!--====================JS================-->
+
+    <main class="container border">
+        <div class="flex-item-1">
+            <h1>Ser Mybank é reiventar sua vida financeira.</h1>
+            <p>Conta com rendimento acima da poupancça , cartão
+                de crédito sem anuidade e o melhor: resolva tudo pelo App.</p>
+
+            <div>
+                <a href="" class="btn">Quero ser Mybank</a>
+                <a href="" class="">App Store</a>
+                <a href="" class="">Play Store</a>
+            </div>
+        </div>
+        <div class="flex-item-3">
+
+        </div>
+    </main>
+
 
     <!--====================JS================-->
 
