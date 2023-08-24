@@ -517,7 +517,7 @@ body {
   position: relative;
   scroll-behavior: smooth;
   /*deixa o scrool mais suave*/
-  background-color: #FBFFFC;
+  background-color: #EAEFEC;
 }
 
 svg,
@@ -803,12 +803,12 @@ header {
   transform-origin: center center;
   transform-style: preserve-3d;
   background-color: red;
-  animation: flip-card 12s linear infinite alternate;
+  animation: flip-card 12s linear infinite alternate, change-bg-card 12s linear infinite alternate;
 }
 
 @keyframes flip-card {
   0% {
-    transform: rotateX(-10deg) rotateY(-10deg);
+    transform: rotateX(-10deg) rotateY(10deg) rotateY(-15deg);
   }
   40% {
     transform: rotateX(0deg) rotateY(20deg);
@@ -817,7 +817,17 @@ header {
     transform: rotateX(180deg) rotateY(20deg);
   }
   100% {
-    transform: rotateX(190deg) rotateY(20deg);
+    transform: rotateX(190deg) rotateY(10deg) rotateY(15deg);
+  }
+}
+@keyframes change-bg-card {
+  0%, 52% {
+    background-image: url("../svg/mybank-front.svg");
+    background-size: cover;
+  }
+  53%, 100% {
+    background-image: url("../svg/mybank-verse.svg");
+    background-size: cover;
   }
 }
 .border {

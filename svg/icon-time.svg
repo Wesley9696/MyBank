@@ -1,22 +1,48 @@
-<svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g id="icon-time" clip-path="url(#clip0_241_290)">
-<rect id="Rectangle 1005" width="72" height="72" rx="17.0769" fill="#FEFBFF"/>
+<svg width="232" height="232" viewBox="0 0 232 232" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="icon-time" filter="url(#filter0_dddd_241_290)">
+<g clip-path="url(#clip0_241_290)">
+<rect id="Rectangle 1005" x="80" y="29" width="72" height="72" rx="17.0769" fill="#FEFBFF"/>
 <g id="Group 447">
-<path id="Vector" d="M36 52C44.8366 52 52 44.8366 52 36C52 27.1634 44.8366 20 36 20C27.1634 20 20 27.1634 20 36C20 44.8366 27.1634 52 36 52Z" stroke="url(#paint0_linear_241_290)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-<path id="Vector_2" d="M36 26.4004V36.0004L42.4 39.2004" stroke="url(#paint1_linear_241_290)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector" d="M116 81C124.837 81 132 73.8366 132 65C132 56.1634 124.837 49 116 49C107.163 49 100 56.1634 100 65C100 73.8366 107.163 81 116 81Z" stroke="url(#paint0_linear_241_290)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M116 55.3999V64.9999L122.4 68.1999" stroke="url(#paint1_linear_241_290)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
 </g>
 </g>
 <defs>
-<linearGradient id="paint0_linear_241_290" x1="47.04" y1="24.32" x2="26.08" y2="48.48" gradientUnits="userSpaceOnUse">
+<filter id="filter0_dddd_241_290" x="0" y="0" width="232" height="232" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="2.30969"/>
+<feGaussianBlur stdDeviation="1.81152"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.0745098 0 0 0 0 0.913725 0 0 0 0 0.411765 0 0 0 0.0278729 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_241_290"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="6.38599"/>
+<feGaussianBlur stdDeviation="5.00862"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.0745098 0 0 0 0 0.913725 0 0 0 0 0.411765 0 0 0 0.04 0"/>
+<feBlend mode="normal" in2="effect1_dropShadow_241_290" result="effect2_dropShadow_241_290"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="15.375"/>
+<feGaussianBlur stdDeviation="12.0588"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.0745098 0 0 0 0 0.913725 0 0 0 0 0.411765 0 0 0 0.0521271 0"/>
+<feBlend mode="normal" in2="effect2_dropShadow_241_290" result="effect3_dropShadow_241_290"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="51"/>
+<feGaussianBlur stdDeviation="40"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.0745098 0 0 0 0 0.913725 0 0 0 0 0.411765 0 0 0 0.08 0"/>
+<feBlend mode="normal" in2="effect3_dropShadow_241_290" result="effect4_dropShadow_241_290"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect4_dropShadow_241_290" result="shape"/>
+</filter>
+<linearGradient id="paint0_linear_241_290" x1="127.04" y1="53.32" x2="106.08" y2="77.48" gradientUnits="userSpaceOnUse">
 <stop stop-color="#00FD83"/>
 <stop offset="0.70003" stop-color="#00BF63"/>
 </linearGradient>
-<linearGradient id="paint1_linear_241_290" x1="41.408" y1="28.1284" x2="34.0803" y2="32.3516" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint1_linear_241_290" x1="121.408" y1="57.1279" x2="114.08" y2="61.3511" gradientUnits="userSpaceOnUse">
 <stop stop-color="#00FD83"/>
 <stop offset="0.70003" stop-color="#00BF63"/>
 </linearGradient>
 <clipPath id="clip0_241_290">
-<rect width="72" height="72" fill="white"/>
+<rect x="80" y="29" width="72" height="72" rx="17.08" fill="white"/>
 </clipPath>
 </defs>
 </svg>
