@@ -1,0 +1,40 @@
+
+//animation
+//comprimento do cartão
+$width-card: 340px;
+$heigth-card: 0.64 * $width-card;
+
+.div-card{
+    perspective: 500px;
+
+    position: relative; //o pai deve ser relative para os filhoes serem absolut, assim é possível manipular os filhos dentro do pai
+}
+
+.card{
+    width: $width-card;
+    height: $heigth-card;
+
+    border-radius: 12px;
+
+    transform-origin: center center; //faz com que ele tenha como referência o eixo do centro dele nesse caso do cartão
+    transform-style: preserve-3d;
+
+    background-color: red;
+
+    animation: flip-card 12s linear infinite alternate;    //anima o cartão no modo flip em 12segundos de maneira infinita e alternada
+}
+
+@keyframes flip-card{
+    0%{
+        transform: rotateX(-10deg) rotateY(-10deg);
+    }
+    40%{
+        transform: rotateX(0deg) rotateY(20deg);
+    }
+    60%{
+        transform: rotateX(180deg) rotateY(20deg);
+    }
+    100%{
+        transform: rotateX(190deg) rotateY(20deg);
+    }
+}
