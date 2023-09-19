@@ -123,6 +123,22 @@
   }
 }
 
+.list-item {
+  list-style: none;
+  position: relative;
+  padding: 8px 8px 8px 72px;
+  margin-bottom: 48px;
+}
+.list-item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -8px;
+  display: block;
+  width: 64px;
+  height: 64px;
+}
+
 h1 {
   color: #161617;
   font-family: "Sora", sans-serif;
@@ -216,6 +232,37 @@ a:hover {
 .btn:hover {
   transform: scale(1.02);
   box-shadow: 0px 1.9473838806px 2.717279911px 0px rgba(47, 145, 97, 0.87), 0px 5.3842673302px 7.5129313469px 0px rgba(15, 228, 125, 0.07), 0px 12.9632415771px 18.0882434845px 0px rgba(71, 227, 152, 0.09), 0px 43px 60px 0px rgba(7, 205, 110, 0.14);
+}
+
+.link {
+  display: inline-block;
+  background-image: url("/svg/icon-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 0% 50%;
+  font-size: 18px;
+  padding: 16px 16px 16px 40px;
+  position: relative;
+}
+.link::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 75%;
+  left: 55px;
+  width: 0%;
+  height: 2px;
+  border-radius: 2px;
+  transition: 0.5s ease;
+  background-color: #25F076;
+}
+.link:hover {
+  opacity: 0.8;
+  padding-left: 64px;
+  background-position: 8px 50%;
+}
+.link:hover::after {
+  width: 100%;
+  background-color: #25F076;
 }
 
 .s-0 {
@@ -811,6 +858,110 @@ header {
 
 .dropshadow {
   filter: drop-shadow(0px 2.3096878529px 3.6230399609px rgba(19, 233, 105, 0.03)) drop-shadow(0px 6.3859915733px 10.017241478px rgba(19, 233, 105, 0.36)) drop-shadow(0px 15.3750076294px 24.1176586151px rgba(19, 233, 105, 0.16)) drop-shadow(0px 51px 80px rgba(19, 233, 105, 0.3));
+}
+
+.bg-icon-mobile::after {
+  background-image: url("/svg/icon-mobile.svg");
+  background-size: cover;
+  cursor: pointer;
+  filter: drop-shadow(0px 16px 24px rgba(9, 201, 89, 0.26));
+}
+.bg-icon-mobile:hover::after {
+  transform: scale(1.05);
+}
+
+.bg-icon-card::after {
+  background-image: url("/svg/icon-card.svg");
+  background-size: cover;
+  cursor: pointer;
+  filter: drop-shadow(0px 16px 24px rgba(9, 201, 89, 0.26));
+}
+.bg-icon-card:hover::after {
+  transform: scale(1.05);
+}
+
+.bg-icon-contactless::after {
+  background-image: url("/svg/icon-contactless.svg");
+  background-size: cover;
+  cursor: pointer;
+  filter: drop-shadow(0px 16px 24px rgba(9, 201, 89, 0.26));
+}
+.bg-icon-contactless:hover::after {
+  transform: scale(1.05);
+}
+
+.bg-icon-time::after {
+  background-image: url("/svg/icon-time.svg");
+  background-size: cover;
+  cursor: pointer;
+  filter: drop-shadow(0px 16px 24px rgba(9, 201, 89, 0.26));
+}
+.bg-icon-time:hover::after {
+  transform: scale(1.05);
+}
+
+.bg-icon-config::after {
+  background-image: url("/svg/icon-config.svg");
+  background-size: cover;
+  cursor: pointer;
+  filter: drop-shadow(0px 16px 24px rgba(9, 201, 89, 0.26));
+}
+.bg-icon-config:hover::after {
+  transform: scale(1.05);
+}
+
+.bg-icon-check::after {
+  background-image: url("/svg/icon-check.svg");
+  background-size: cover;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  top: 16px;
+  left: 8px;
+  filter: drop-shadow(0px 16px 24px rgba(9, 201, 89, 0.26));
+}
+.bg-icon-check:hover::after {
+  transform: scale(1.05);
+}
+
+.bg-icon-arrow::after {
+  background-image: url("/svg/icon-arrow.svg");
+  background-size: cover;
+  cursor: pointer;
+  filter: drop-shadow(0px 16px 24px rgba(9, 201, 89, 0.26));
+}
+.bg-icon-arrow:hover::after {
+  transform: scale(1.05);
+}
+
+.bg-icon-cash::after {
+  background-image: url("/svg/icon-cash.svg");
+  background-size: cover;
+  cursor: pointer;
+  filter: drop-shadow(0px 16px 24px rgba(9, 201, 89, 0.26));
+}
+.bg-icon-cash:hover::after {
+  transform: scale(1.05);
+}
+
+.bg-icon-transfer::after {
+  background-image: url("/svg/icon-transfer.svg");
+  background-size: cover;
+  cursor: pointer;
+  filter: drop-shadow(0px 16px 24px rgba(9, 201, 89, 0.26));
+}
+.bg-icon-transfer:hover::after {
+  transform: scale(1.05);
+}
+
+.bg-icon-phone::after {
+  background-image: url("/svg/icon-phone.svg");
+  background-size: cover;
+  cursor: pointer;
+  filter: drop-shadow(0px 16px 24px rgba(9, 201, 89, 0.26));
+}
+.bg-icon-phone:hover::after {
+  transform: scale(1.05);
 }
 
 .div-card {
