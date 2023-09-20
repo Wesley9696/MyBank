@@ -236,6 +236,7 @@ h4 {
 }
 
 h5 {
+  text-transform: uppercase;
   color: #00BF63;
   font-family: "Sora", sans-serif;
   font-size: 18px;
@@ -1276,6 +1277,11 @@ header {
     opacity: 2;
   }
 }
+.fignu2-screen1 {
+  animation: fignu2-screen1 18s ease infinite alternate;
+}
+
+@keyframes fignu2-screen1 {}
 .border {
   border: 1px solid red;
 }/*# sourceMappingURL=style.css.map */
