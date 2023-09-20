@@ -139,6 +139,46 @@
   height: 64px;
 }
 
+.best {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 50px;
+  background-color: #F2FAF5;
+}
+@media screen and (max-width: 960px) {
+  .best {
+    flex-direction: column;
+  }
+}
+.best::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 124px;
+  height: 32px;
+  background-image: url("/svg/entail.svg");
+}
+
+.best-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 16px;
+  margin: 8px 0px;
+}
+@media screen and (max-width: 960px) {
+  .best-item {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 h1 {
   color: #161617;
   font-family: "Sora", sans-serif;
@@ -196,7 +236,7 @@ h4 {
 }
 
 h5 {
-  color: #161617;
+  color: #00BF63;
   font-family: "Sora", sans-serif;
   font-size: 18px;
   line-height: 140%;
@@ -207,6 +247,29 @@ h5 {
     font-size: 16px;
     line-height: 150%;
   }
+}
+
+.bold {
+  font-weight: bold;
+  color: #353436;
+}
+
+.strong {
+  color: #161617;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 16px;
+  line-height: 140%;
+}
+@media screen and (max-width: 960px) {
+  .strong {
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 14px;
+    line-height: 150%;
+  }
+}
+
+.text-center {
+  text-align: center;
 }
 
 a {
@@ -240,6 +303,7 @@ a:hover {
   background-repeat: no-repeat;
   background-position: 0% 50%;
   font-size: 18px;
+  color: #00BF63;
   padding: 16px 16px 16px 40px;
   position: relative;
 }
@@ -856,15 +920,102 @@ header {
   width: 100%;
 }
 
+.box {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0px 24px;
+}
+
+.container-swiper {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 96px 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.swiper-slide {
+  max-width: 420px;
+  padding: 24px 36px;
+  margin: 0px 16px;
+  border-radius: 50px;
+  background-color: #F2FAF5;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.button-next {
+  position: absolute;
+  right: 32px;
+  top: 24px;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  background-image: url(/svg/icon-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.button-prev {
+  position: absolute;
+  right: 88px;
+  top: 24px;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  background-image: url(/svg/icon-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  transform: rotate(180deg);
+}
+
+.photo-profile {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-image: url(/img/people1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.photo-1 {
+  background-image: url(/img/people2.png);
+}
+
+.photo-2 {
+  background-image: url(/img/people3.png);
+}
+
+.photo-3 {
+  background-image: url(/img/people4.png);
+}
+
+.photo-4 {
+  background-image: url(/img/people5.png);
+}
+
+.photo-5 {
+  background-image: url(/img/people6.png);
+}
+
 .dropshadow {
-  filter: drop-shadow(0px 16px 24px rgba(9, 201, 89, 0.26));
+  filter: drop-shadow(0px 16px 20px rgba(9, 201, 89, 0.185));
 }
 
 .bg-icon-mobile::after {
   background-image: url("/svg/icon-mobile.svg");
   background-size: cover;
   cursor: pointer;
-  filter: drop-shadow(0px 16px 24px rgba(9, 201, 89, 0.26));
 }
 .bg-icon-mobile:hover::after {
   transform: scale(1.05);
@@ -874,7 +1025,6 @@ header {
   background-image: url("/svg/icon-card.svg");
   background-size: cover;
   cursor: pointer;
-  filter: drop-shadow(0px 16px 24px rgba(9, 201, 89, 0.26));
 }
 .bg-icon-card:hover::after {
   transform: scale(1.05);
@@ -884,7 +1034,6 @@ header {
   background-image: url("/svg/icon-contactless.svg");
   background-size: cover;
   cursor: pointer;
-  filter: drop-shadow(0px 16px 24px rgba(9, 201, 89, 0.26));
 }
 .bg-icon-contactless:hover::after {
   transform: scale(1.05);
@@ -894,7 +1043,6 @@ header {
   background-image: url("/svg/icon-time.svg");
   background-size: cover;
   cursor: pointer;
-  filter: drop-shadow(0px 16px 24px rgba(9, 201, 89, 0.26));
 }
 .bg-icon-time:hover::after {
   transform: scale(1.05);
@@ -904,7 +1052,6 @@ header {
   background-image: url("/svg/icon-config.svg");
   background-size: cover;
   cursor: pointer;
-  filter: drop-shadow(0px 16px 24px rgba(9, 201, 89, 0.26));
 }
 .bg-icon-config:hover::after {
   transform: scale(1.05);
@@ -918,7 +1065,6 @@ header {
   height: 40px;
   top: 16px;
   left: 8px;
-  filter: drop-shadow(0px 16px 24px rgba(9, 201, 89, 0.26));
 }
 .bg-icon-check:hover::after {
   transform: scale(1.05);
@@ -928,7 +1074,6 @@ header {
   background-image: url("/svg/icon-arrow.svg");
   background-size: cover;
   cursor: pointer;
-  filter: drop-shadow(0px 16px 24px rgba(9, 201, 89, 0.26));
 }
 .bg-icon-arrow:hover::after {
   transform: scale(1.05);
@@ -938,7 +1083,6 @@ header {
   background-image: url("/svg/icon-cash.svg");
   background-size: cover;
   cursor: pointer;
-  filter: drop-shadow(0px 16px 24px rgba(9, 201, 89, 0.26));
 }
 .bg-icon-cash:hover::after {
   transform: scale(1.05);
@@ -948,7 +1092,6 @@ header {
   background-image: url("/svg/icon-transfer.svg");
   background-size: cover;
   cursor: pointer;
-  filter: drop-shadow(0px 16px 24px rgba(9, 201, 89, 0.26));
 }
 .bg-icon-transfer:hover::after {
   transform: scale(1.05);
@@ -958,9 +1101,16 @@ header {
   background-image: url("/svg/icon-phone.svg");
   background-size: cover;
   cursor: pointer;
-  filter: drop-shadow(0px 16px 24px rgba(9, 201, 89, 0.26));
 }
 .bg-icon-phone:hover::after {
+  transform: scale(1.05);
+}
+
+.icon {
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+.icon:hover {
   transform: scale(1.05);
 }
 
