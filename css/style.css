@@ -1411,6 +1411,25 @@ header {
     fill-opacity: 0.4;
   }
 }
+.figmy4-letter-y, .figmy4-letter-m {
+  animation: figmy4-letter 4s ease infinite alternate;
+  stroke-width: 4;
+  stroke-dasharray: 1 400;
+  stroke-opacity: 0;
+}
+
+@keyframes figmy4-letter {
+  0% {
+    stroke-width: 4;
+    stroke-dasharray: 1 400;
+    stroke-opacity: 0;
+  }
+  100% {
+    stroke-width: 4;
+    stroke-dasharray: 400 0;
+    stroke-opacity: 1;
+  }
+}
 .border {
   border: 1px solid red;
 }/*# sourceMappingURL=style.css.map */
