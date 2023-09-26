@@ -1,10 +1,9 @@
 <svg width="806" height="1053" viewBox="0 0 806 1053" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="fignu3">
-<g id="fignu3-shadow" filter="url(#filter0_f_0_1)">
+<g id="fignu3-shadow" class="fignu3-shadow" filter="url(#filter0_f_0_1)">
 <ellipse cx="421.5" cy="956" rx="317.5" ry="30" fill="#464646" fill-opacity="0.4"/>
 </g>
-<g id="fignu3-card-verse" 
-00>
+<g id="fignu3-card-verse" class="fignu3-card-verse">
 <rect id="Rectangle 1018" width="529.684" height="336.005" rx="18.3409" transform="matrix(0.83147 0.55557 -0.285354 0.958422 95.8801 0)" fill="url(#paint0_linear_0_1)"/>
 <rect id="Rectangle 1019" width="529.684" height="78.7511" transform="matrix(0.83147 0.55557 -0.285354 0.958422 88.9717 23.2034)" fill="#D6D6D6"/>
 <rect id="Rectangle 1020" width="115.502" height="76.126" rx="38.063" transform="matrix(0.83147 0.55557 -0.285354 0.958422 63.208 168.69)" fill="url(#paint1_linear_0_1)"/>
@@ -35,7 +34,7 @@
 </g>
 <g id="fignu3-card-front" class="fignu3-card-front">
 <rect id="Rectangle 1021" width="529.684" height="336.005" rx="18.3409" transform="matrix(0.760406 -0.649448 0.468701 0.883357 199.999 574.002)" fill="url(#paint3_linear_0_1)"/>
-<text id="WESLEY NASCIMENTO" transform="matrix(0.760406 -0.649448 0.468701 0.883357 439.509 687.75)" fill="#FEFBFF" xml:space="preserve" style="white-space: pre" font-family="Sora" font-size="17.6072" font-weight="600" letter-spacing="0.1em"><tspan x="0" y="18.4865">WESLEY NASCIMENTO</tspan></text>
+<text id="WESLEY NASCIMENTO" transform="matrix(0.760406 -0.649448 0.468701 0.883357 439.509 687.75)" fill="#FEFBFF" xml:space="preserve" style="white-space: pre" font-family="Sora" font-size="17.6072" letter-spacing="0.1em"><tspan x="0" y="18.4865">WESLEY NASCIMENTO</tspan></text>
 <circle id="Ellipse 171" cx="33.5641" cy="33.5641" r="33.5641" transform="matrix(0.760406 -0.649448 0.468701 0.883357 513.101 344.961)" fill="#E71924"/>
 <circle id="Ellipse 172" cx="33.5641" cy="33.5641" r="33.5641" transform="matrix(0.760406 -0.649448 0.468701 0.883357 544.206 318.395)" fill="#F99F19"/>
 <path id="Intersect_2" fill-rule="evenodd" clip-rule="evenodd" d="M582.32 362.922C585.506 352.323 584.895 340.472 579.815 330.897C574.735 321.323 566.31 316.145 557.371 315.902C554.184 326.501 554.795 338.352 559.876 347.927C564.956 357.502 573.381 362.68 582.32 362.922Z" fill="#F26520"/>
