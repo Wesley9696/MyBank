@@ -9,6 +9,10 @@
 }
 
 /*cores auxiliares*/
+.color-white {
+  color: #F2FAF5;
+}
+
 .container {
   max-width: 1440px;
   margin: 0 auto;
@@ -39,6 +43,18 @@
 
 .flex-column {
   flex-direction: column;
+}
+
+.flex-top {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.flex-spacebetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .relative {
@@ -95,6 +111,10 @@
 
 .hidden {
   overflow: hidden;
+}
+
+.overflow-x {
+  overflow-x: hidden;
 }
 
 .hero {
@@ -177,6 +197,43 @@
     justify-content: center;
     align-items: center;
   }
+}
+
+.bg-invite {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.svg-invite {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  z-index: -1;
+}
+@media screen and (max-width: 1440px) and (min-width: 1140px) {
+  .svg-invite {
+    transform: translate(-50%, -50%) scale(1.5);
+  }
+}
+
+.list {
+  list-style: none;
+}
+.list li {
+  margin-bottom: 12px;
+}
+.list a {
+  color: #F2FAF5;
+}
+
+footer {
+  background: var(--gradiente-green-my-Bank, linear-gradient(221deg, #00FD83 8.41%, #00BF63 66.87%));
+}
+
+.bt-white {
+  border-top: 1px solid #FBFFFC;
 }
 
 h1 {
@@ -291,7 +348,6 @@ a:hover {
   padding: 12px 32px;
   transition: 0.3s ease;
   color: #FBFFFC;
-  box-shadow: 0px 2.7672564983px 2.6012210846px 0px rgba(53, 53, 53, 0), 0px 6.6501021385px 6.2510957718px 0px rgba(34, 34, 34, 0.07), 0px 12.5215520859px 11.7702589035px 0px rgba(80, 80, 80, 0.09), 0px 22.336309433px 20.9961299896px 0px rgba(71, 71, 71, 0.1), 0px 41.7776107788px 39.2709541321px 0px rgba(54, 54, 54, 0.12), 0px 100px 94px 0px rgba(58, 58, 58, 0.17);
 }
 .btn:hover {
   transform: scale(1.02);
@@ -1115,6 +1171,11 @@ header {
   transform: scale(1.05);
 }
 
+.icon-network {
+  max-width: 48px;
+  padding: 8px;
+}
+
 .div-card {
   perspective: 500px;
   position: relative;
@@ -1274,7 +1335,7 @@ header {
     opacity: 1;
   }
   70%, 100% {
-    opacity: 2;
+    opacity: 0;
   }
 }
 .fignu2-screen1 {
@@ -1428,6 +1489,18 @@ header {
     stroke-width: 4;
     stroke-dasharray: 400 0;
     stroke-opacity: 1;
+  }
+}
+.fignu5-ball1 {
+  animation: translate-ball 4s ease infinite alternate;
+}
+
+@keyframes translate-ball {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(200px, -100px, 0);
   }
 }
 .border {

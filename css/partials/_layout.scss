@@ -90,6 +90,18 @@ $container-s: 540px;
     flex-direction: column;
 }
 
+.flex-top{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.flex-spacebetween{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .relative {
     position: relative;
 }
@@ -144,6 +156,10 @@ $container-s: 540px;
 
 .hidden {
     overflow: hidden;
+}
+
+.overflow-x{
+    overflow-x: hidden;
 }
 
 
@@ -242,4 +258,45 @@ $container-s: 540px;
         justify-content: center;
         align-items: center;
     }
+}
+
+
+.bg-invite{
+    height: 100vh;
+
+    overflow: hidden;
+}
+
+.svg-invite{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform:  translate(-50%, -50%);
+    width: 100%;
+
+    z-index: -1;
+
+    @include responsive(l){
+        transform:  translate(-50%, -50%) scale(1.5);
+    }
+}
+
+.list{
+    list-style: none;
+    li{
+        margin-bottom: 12px;
+    }
+
+    a{
+        color: $white-normal;
+    }
+}
+
+footer{
+    background: var(--gradiente-green-my-Bank, linear-gradient(221deg, #00FD83 8.41%, #00BF63 66.87%));
+}
+
+.bt-white{
+    border-top: 1px solid $white-light;
 }
